@@ -1,0 +1,426 @@
+\hypertarget{main_8c}{}\section{Src/main.c File Reference}
+\label{main_8c}\index{Src/main.\+c@{Src/main.\+c}}
+
+
+\+: Main program body  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for main.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8c_a6b20d41d6252e9871430c242cb1a56e7}{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}~32
+\item 
+\#define \hyperlink{main_8c_af55149bc1f05cf18af067a302e31e3f9}{D\+A\+T\+A\+\_\+\+S\+I\+ZE}~2
+\item 
+\#define \hyperlink{main_8c_afba53f55baa92fb0f276b8cb130daefd}{I\+N\+\_\+\+S\+I\+ZE}~32
+\item 
+\#define \hyperlink{main_8c_a01099281ea98bb6c1aab825f05d9818c}{I\+N\+A219\+\_\+\+A\+D\+D\+R\+E\+SS}~(0x40$<$$<$1)
+\item 
+\#define \hyperlink{main_8c_aab641248471a0f356b9ff6329bcd8084}{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG}~(0x00)
+\item 
+\#define \hyperlink{main_8c_a99de9caaed1cbc48b2ecfe4b6c5ef59d}{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+S\+H\+U\+N\+T\+V\+O\+L\+T\+A\+GE}~(0x01)
+\item 
+\#define \hyperlink{main_8c_a06987d28f8a8885f7d1f6a10d0ec6b3b}{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+B\+U\+S\+V\+O\+L\+T\+A\+GE}~(0x02)
+\item 
+\#define \hyperlink{main_8c_add277c6e0a9783de517e8a2ee2cdad86}{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+ER}~(0x03)
+\item 
+\#define \hyperlink{main_8c_aee975d7ad192f4eadf01b6d96c1a7c50}{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+U\+R\+R\+E\+NT}~(0x04)
+\item 
+\#define \hyperlink{main_8c_a7ec015caf45bb013e8858a6e53e47e3c}{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+ON}~(0x05)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8c_a70af21c671abfcc773614a9a4f63d920}{System\+Clock\+\_\+\+Config} (void)
+\begin{DoxyCompactList}\small\item\em System Clock Configuration. \end{DoxyCompactList}\item 
+void \hyperlink{main_8c_a419bc368fb26e3e7c2b4b9a98e34d890}{set\+Calibration\+\_\+16\+V\+\_\+400mA} (void)
+\begin{DoxyCompactList}\small\item\em Sets up I\+N\+A219 configuration (0x019F) and calibration (0x2000) registers. \end{DoxyCompactList}\item 
+float \hyperlink{main_8c_ac39955d248b750a477bfe2d72e8d8045}{get\+Current\+\_\+mA} (uint16\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Calculates current value. \end{DoxyCompactList}\item 
+float \hyperlink{main_8c_aba37860579ee6348b2f1b7ebb17908a2}{get\+Power\+\_\+mW} (uint16\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Calculates power value. \end{DoxyCompactList}\item 
+float \hyperlink{main_8c_ae582a9d960a21f5c27919f80182426c7}{get\+Bus\+Voltage\+\_\+V} (uint16\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Calculates bus voltage. \end{DoxyCompactList}\item 
+float \hyperlink{main_8c_a13ecb2d79f92d82b88820a3a4b55e1ec}{get\+Shunt\+Voltage\+\_\+mV} (uint16\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Calculates shunt voltage. \end{DoxyCompactList}\item 
+int \hyperlink{main_8c_a77afff843bff76c516c1d325347707e9}{get\+Current\+Divider\+\_\+mA} (void)
+\begin{DoxyCompactList}\small\item\em Getter for current divider. \end{DoxyCompactList}\item 
+int \hyperlink{main_8c_af44a7336b4b29a674104bed70f0a7696}{get\+Power\+Multiplier\+\_\+mW} (void)
+\begin{DoxyCompactList}\small\item\em Getter for power multiplier. \end{DoxyCompactList}\item 
+int \hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
+void \hyperlink{main_8c_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+A\+D\+C\+\_\+\+Handle\+Type\+Def \hyperlink{main_8c_a22b804736f5648d52f639b2647d4ed13}{hadc1}
+\item 
+A\+D\+C\+\_\+\+Handle\+Type\+Def \hyperlink{main_8c_acd9221f1aa19aebfe0b744947f2daf49}{hadc2}
+\item 
+D\+M\+A\+\_\+\+Handle\+Type\+Def \hyperlink{main_8c_a1c126854bb1813d31ab4776b21dcc51f}{hdma\+\_\+adc1}
+\item 
+I2\+C\+\_\+\+Handle\+Type\+Def \hyperlink{main_8c_af7b2c26e44dadaaa798a5c3d82914ba7}{hi2c1}
+\item 
+O\+P\+A\+M\+P\+\_\+\+Handle\+Type\+Def \hyperlink{main_8c_ad6ba5a60e725f71a76497c5de37e3330}{hopamp2}
+\item 
+T\+I\+M\+\_\+\+Handle\+Type\+Def \hyperlink{main_8c_a25fc663547539bc49fecc0011bd76ab5}{htim1}
+\item 
+U\+A\+R\+T\+\_\+\+Handle\+Type\+Def \hyperlink{main_8c_aa9479c261d65eecedd3d9582f7f0f89c}{huart2}
+\item 
+uint8\+\_\+t \hyperlink{main_8c_a97eaba5b61706891a4da114bde40da4d}{buffer} \mbox{[}\hyperlink{stm32f3xx__it_8c_a6b20d41d6252e9871430c242cb1a56e7}{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{main_8c_a335622dac66619cb6b7e24da56046b05}{data} \mbox{[}\hyperlink{stm32f3xx__it_8c_af55149bc1f05cf18af067a302e31e3f9}{D\+A\+T\+A\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{main_8c_abe742aa972d23b14da1198c38178b547}{uart1} \mbox{[}\hyperlink{stm32f3xx__it_8c_afba53f55baa92fb0f276b8cb130daefd}{I\+N\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{main_8c_a38534862cdd9958b6ca94c29cf6055a3}{uart2} \mbox{[}\hyperlink{stm32f3xx__it_8c_afba53f55baa92fb0f276b8cb130daefd}{I\+N\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{main_8c_abafb86891e646f45ae2046b150883a04}{uart\+\_\+ptr}
+\item 
+uint16\+\_\+t \hyperlink{main_8c_a1ddf5434a1f7cce64e1dd76441defc62}{adc\+\_\+val}
+\item 
+uint32\+\_\+t \hyperlink{main_8c_ab1bcd28186de164efc41cc366368628e}{ina219\+\_\+current\+Divider\+\_\+mA}
+\item 
+uint32\+\_\+t \hyperlink{main_8c_a36230bacf89e85aea98122ffc94bc4fa}{ina219\+\_\+power\+Multiplier\+\_\+mW}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: Main program body 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\subsubsection*{\begin{center}\copyright{} Copyright (c) 2019 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/\+Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8c_a6b20d41d6252e9871430c242cb1a56e7}\label{main_8c_a6b20d41d6252e9871430c242cb1a56e7}} 
+\index{main.\+c@{main.\+c}!B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}{BUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE~32}
+
+\mbox{\Hypertarget{main_8c_af55149bc1f05cf18af067a302e31e3f9}\label{main_8c_af55149bc1f05cf18af067a302e31e3f9}} 
+\index{main.\+c@{main.\+c}!D\+A\+T\+A\+\_\+\+S\+I\+ZE@{D\+A\+T\+A\+\_\+\+S\+I\+ZE}}
+\index{D\+A\+T\+A\+\_\+\+S\+I\+ZE@{D\+A\+T\+A\+\_\+\+S\+I\+ZE}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{D\+A\+T\+A\+\_\+\+S\+I\+ZE}{DATA\_SIZE}}
+{\footnotesize\ttfamily \#define D\+A\+T\+A\+\_\+\+S\+I\+ZE~2}
+
+\mbox{\Hypertarget{main_8c_afba53f55baa92fb0f276b8cb130daefd}\label{main_8c_afba53f55baa92fb0f276b8cb130daefd}} 
+\index{main.\+c@{main.\+c}!I\+N\+\_\+\+S\+I\+ZE@{I\+N\+\_\+\+S\+I\+ZE}}
+\index{I\+N\+\_\+\+S\+I\+ZE@{I\+N\+\_\+\+S\+I\+ZE}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+\_\+\+S\+I\+ZE}{IN\_SIZE}}
+{\footnotesize\ttfamily \#define I\+N\+\_\+\+S\+I\+ZE~32}
+
+\mbox{\Hypertarget{main_8c_a01099281ea98bb6c1aab825f05d9818c}\label{main_8c_a01099281ea98bb6c1aab825f05d9818c}} 
+\index{main.\+c@{main.\+c}!I\+N\+A219\+\_\+\+A\+D\+D\+R\+E\+SS@{I\+N\+A219\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{I\+N\+A219\+\_\+\+A\+D\+D\+R\+E\+SS@{I\+N\+A219\+\_\+\+A\+D\+D\+R\+E\+SS}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+A219\+\_\+\+A\+D\+D\+R\+E\+SS}{INA219\_ADDRESS}}
+{\footnotesize\ttfamily \#define I\+N\+A219\+\_\+\+A\+D\+D\+R\+E\+SS~(0x40$<$$<$1)}
+
+\mbox{\Hypertarget{main_8c_a06987d28f8a8885f7d1f6a10d0ec6b3b}\label{main_8c_a06987d28f8a8885f7d1f6a10d0ec6b3b}} 
+\index{main.\+c@{main.\+c}!I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+B\+U\+S\+V\+O\+L\+T\+A\+GE@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+B\+U\+S\+V\+O\+L\+T\+A\+GE}}
+\index{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+B\+U\+S\+V\+O\+L\+T\+A\+GE@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+B\+U\+S\+V\+O\+L\+T\+A\+GE}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+B\+U\+S\+V\+O\+L\+T\+A\+GE}{INA219\_REG\_BUSVOLTAGE}}
+{\footnotesize\ttfamily \#define I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+B\+U\+S\+V\+O\+L\+T\+A\+GE~(0x02)}
+
+\mbox{\Hypertarget{main_8c_a7ec015caf45bb013e8858a6e53e47e3c}\label{main_8c_a7ec015caf45bb013e8858a6e53e47e3c}} 
+\index{main.\+c@{main.\+c}!I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+ON@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+ON}}
+\index{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+ON@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+ON}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+ON}{INA219\_REG\_CALIBRATION}}
+{\footnotesize\ttfamily \#define I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+ON~(0x05)}
+
+\mbox{\Hypertarget{main_8c_aab641248471a0f356b9ff6329bcd8084}\label{main_8c_aab641248471a0f356b9ff6329bcd8084}} 
+\index{main.\+c@{main.\+c}!I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG}}
+\index{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG}{INA219\_REG\_CONFIG}}
+{\footnotesize\ttfamily \#define I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG~(0x00)}
+
+\mbox{\Hypertarget{main_8c_aee975d7ad192f4eadf01b6d96c1a7c50}\label{main_8c_aee975d7ad192f4eadf01b6d96c1a7c50}} 
+\index{main.\+c@{main.\+c}!I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+U\+R\+R\+E\+NT@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+U\+R\+R\+E\+NT}}
+\index{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+U\+R\+R\+E\+NT@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+U\+R\+R\+E\+NT}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+U\+R\+R\+E\+NT}{INA219\_REG\_CURRENT}}
+{\footnotesize\ttfamily \#define I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+C\+U\+R\+R\+E\+NT~(0x04)}
+
+\mbox{\Hypertarget{main_8c_add277c6e0a9783de517e8a2ee2cdad86}\label{main_8c_add277c6e0a9783de517e8a2ee2cdad86}} 
+\index{main.\+c@{main.\+c}!I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+ER@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+ER}}
+\index{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+ER@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+ER}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+ER}{INA219\_REG\_POWER}}
+{\footnotesize\ttfamily \#define I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+ER~(0x03)}
+
+\mbox{\Hypertarget{main_8c_a99de9caaed1cbc48b2ecfe4b6c5ef59d}\label{main_8c_a99de9caaed1cbc48b2ecfe4b6c5ef59d}} 
+\index{main.\+c@{main.\+c}!I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+S\+H\+U\+N\+T\+V\+O\+L\+T\+A\+GE@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+S\+H\+U\+N\+T\+V\+O\+L\+T\+A\+GE}}
+\index{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+S\+H\+U\+N\+T\+V\+O\+L\+T\+A\+GE@{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+S\+H\+U\+N\+T\+V\+O\+L\+T\+A\+GE}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+S\+H\+U\+N\+T\+V\+O\+L\+T\+A\+GE}{INA219\_REG\_SHUNTVOLTAGE}}
+{\footnotesize\ttfamily \#define I\+N\+A219\+\_\+\+R\+E\+G\+\_\+\+S\+H\+U\+N\+T\+V\+O\+L\+T\+A\+GE~(0x01)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a1730ffe1e560465665eb47d9264826f9}\label{main_8c_a1730ffe1e560465665eb47d9264826f9}} 
+\index{main.\+c@{main.\+c}!Error\+\_\+\+Handler@{Error\+\_\+\+Handler}}
+\index{Error\+\_\+\+Handler@{Error\+\_\+\+Handler}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Error\+\_\+\+Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{main_8c_ae582a9d960a21f5c27919f80182426c7}\label{main_8c_ae582a9d960a21f5c27919f80182426c7}} 
+\index{main.\+c@{main.\+c}!get\+Bus\+Voltage\+\_\+V@{get\+Bus\+Voltage\+\_\+V}}
+\index{get\+Bus\+Voltage\+\_\+V@{get\+Bus\+Voltage\+\_\+V}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{get\+Bus\+Voltage\+\_\+\+V()}{getBusVoltage\_V()}}
+{\footnotesize\ttfamily float get\+Bus\+Voltage\+\_\+V (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Calculates bus voltage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 2} & bytes raw value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns measured bus voltage in V 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_ac39955d248b750a477bfe2d72e8d8045}\label{main_8c_ac39955d248b750a477bfe2d72e8d8045}} 
+\index{main.\+c@{main.\+c}!get\+Current\+\_\+mA@{get\+Current\+\_\+mA}}
+\index{get\+Current\+\_\+mA@{get\+Current\+\_\+mA}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{get\+Current\+\_\+m\+A()}{getCurrent\_mA()}}
+{\footnotesize\ttfamily float get\+Current\+\_\+mA (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Calculates current value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 2} & bytes raw value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns measured current in mA 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_a77afff843bff76c516c1d325347707e9}\label{main_8c_a77afff843bff76c516c1d325347707e9}} 
+\index{main.\+c@{main.\+c}!get\+Current\+Divider\+\_\+mA@{get\+Current\+Divider\+\_\+mA}}
+\index{get\+Current\+Divider\+\_\+mA@{get\+Current\+Divider\+\_\+mA}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{get\+Current\+Divider\+\_\+m\+A()}{getCurrentDivider\_mA()}}
+{\footnotesize\ttfamily int get\+Current\+Divider\+\_\+mA (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Getter for current divider. 
+
+\begin{DoxyReturn}{Returns}
+returns current divider in mA 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_aba37860579ee6348b2f1b7ebb17908a2}\label{main_8c_aba37860579ee6348b2f1b7ebb17908a2}} 
+\index{main.\+c@{main.\+c}!get\+Power\+\_\+mW@{get\+Power\+\_\+mW}}
+\index{get\+Power\+\_\+mW@{get\+Power\+\_\+mW}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{get\+Power\+\_\+m\+W()}{getPower\_mW()}}
+{\footnotesize\ttfamily float get\+Power\+\_\+mW (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Calculates power value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 2} & bytes raw value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns measured power in mW 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_af44a7336b4b29a674104bed70f0a7696}\label{main_8c_af44a7336b4b29a674104bed70f0a7696}} 
+\index{main.\+c@{main.\+c}!get\+Power\+Multiplier\+\_\+mW@{get\+Power\+Multiplier\+\_\+mW}}
+\index{get\+Power\+Multiplier\+\_\+mW@{get\+Power\+Multiplier\+\_\+mW}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{get\+Power\+Multiplier\+\_\+m\+W()}{getPowerMultiplier\_mW()}}
+{\footnotesize\ttfamily int get\+Power\+Multiplier\+\_\+mW (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Getter for power multiplier. 
+
+\begin{DoxyReturn}{Returns}
+returns power multiplier in mW 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_a13ecb2d79f92d82b88820a3a4b55e1ec}\label{main_8c_a13ecb2d79f92d82b88820a3a4b55e1ec}} 
+\index{main.\+c@{main.\+c}!get\+Shunt\+Voltage\+\_\+mV@{get\+Shunt\+Voltage\+\_\+mV}}
+\index{get\+Shunt\+Voltage\+\_\+mV@{get\+Shunt\+Voltage\+\_\+mV}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{get\+Shunt\+Voltage\+\_\+m\+V()}{getShuntVoltage\_mV()}}
+{\footnotesize\ttfamily float get\+Shunt\+Voltage\+\_\+mV (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Calculates shunt voltage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 2} & bytes raw value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns measured ahunt voltage in mV 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The application entry point. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em int} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{main_8c_a419bc368fb26e3e7c2b4b9a98e34d890}\label{main_8c_a419bc368fb26e3e7c2b4b9a98e34d890}} 
+\index{main.\+c@{main.\+c}!set\+Calibration\+\_\+16\+V\+\_\+400mA@{set\+Calibration\+\_\+16\+V\+\_\+400mA}}
+\index{set\+Calibration\+\_\+16\+V\+\_\+400mA@{set\+Calibration\+\_\+16\+V\+\_\+400mA}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{set\+Calibration\+\_\+16\+V\+\_\+400m\+A()}{setCalibration\_16V\_400mA()}}
+{\footnotesize\ttfamily void set\+Calibration\+\_\+16\+V\+\_\+400mA (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Sets up I\+N\+A219 configuration (0x019F) and calibration (0x2000) registers. 
+
+\mbox{\Hypertarget{main_8c_a70af21c671abfcc773614a9a4f63d920}\label{main_8c_a70af21c671abfcc773614a9a4f63d920}} 
+\index{main.\+c@{main.\+c}!System\+Clock\+\_\+\+Config@{System\+Clock\+\_\+\+Config}}
+\index{System\+Clock\+\_\+\+Config@{System\+Clock\+\_\+\+Config}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{System\+Clock\+\_\+\+Config()}{SystemClock\_Config()}}
+{\footnotesize\ttfamily void System\+Clock\+\_\+\+Config (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+System Clock Configuration. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+Initializes the C\+PU, A\+HB and A\+PB busses clocks
+
+Initializes the C\+PU, A\+HB and A\+PB busses clocks
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{main_8c_a1ddf5434a1f7cce64e1dd76441defc62}\label{main_8c_a1ddf5434a1f7cce64e1dd76441defc62}} 
+\index{main.\+c@{main.\+c}!adc\+\_\+val@{adc\+\_\+val}}
+\index{adc\+\_\+val@{adc\+\_\+val}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{adc\+\_\+val}{adc\_val}}
+{\footnotesize\ttfamily uint16\+\_\+t adc\+\_\+val}
+
+\mbox{\Hypertarget{main_8c_a97eaba5b61706891a4da114bde40da4d}\label{main_8c_a97eaba5b61706891a4da114bde40da4d}} 
+\index{main.\+c@{main.\+c}!buffer@{buffer}}
+\index{buffer@{buffer}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily uint8\+\_\+t buffer\mbox{[}\hyperlink{stm32f3xx__it_8c_a6b20d41d6252e9871430c242cb1a56e7}{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}}
+
+\mbox{\Hypertarget{main_8c_a335622dac66619cb6b7e24da56046b05}\label{main_8c_a335622dac66619cb6b7e24da56046b05}} 
+\index{main.\+c@{main.\+c}!data@{data}}
+\index{data@{data}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data\mbox{[}\hyperlink{stm32f3xx__it_8c_af55149bc1f05cf18af067a302e31e3f9}{D\+A\+T\+A\+\_\+\+S\+I\+ZE}\mbox{]}}
+
+\mbox{\Hypertarget{main_8c_a22b804736f5648d52f639b2647d4ed13}\label{main_8c_a22b804736f5648d52f639b2647d4ed13}} 
+\index{main.\+c@{main.\+c}!hadc1@{hadc1}}
+\index{hadc1@{hadc1}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{hadc1}{hadc1}}
+{\footnotesize\ttfamily A\+D\+C\+\_\+\+Handle\+Type\+Def hadc1}
+
+\mbox{\Hypertarget{main_8c_acd9221f1aa19aebfe0b744947f2daf49}\label{main_8c_acd9221f1aa19aebfe0b744947f2daf49}} 
+\index{main.\+c@{main.\+c}!hadc2@{hadc2}}
+\index{hadc2@{hadc2}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{hadc2}{hadc2}}
+{\footnotesize\ttfamily A\+D\+C\+\_\+\+Handle\+Type\+Def hadc2}
+
+\mbox{\Hypertarget{main_8c_a1c126854bb1813d31ab4776b21dcc51f}\label{main_8c_a1c126854bb1813d31ab4776b21dcc51f}} 
+\index{main.\+c@{main.\+c}!hdma\+\_\+adc1@{hdma\+\_\+adc1}}
+\index{hdma\+\_\+adc1@{hdma\+\_\+adc1}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{hdma\+\_\+adc1}{hdma\_adc1}}
+{\footnotesize\ttfamily D\+M\+A\+\_\+\+Handle\+Type\+Def hdma\+\_\+adc1}
+
+File Name \+: \hyperlink{stm32f3xx__hal__msp_8c}{stm32f3xx\+\_\+hal\+\_\+msp.\+c} Description \+: This file provides code for the M\+SP Initialization and de-\/\+Initialization codes.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\subsubsection*{\begin{center}\copyright{} Copyright (c) 2019 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/\+Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause \mbox{\Hypertarget{main_8c_af7b2c26e44dadaaa798a5c3d82914ba7}\label{main_8c_af7b2c26e44dadaaa798a5c3d82914ba7}} 
+\index{main.\+c@{main.\+c}!hi2c1@{hi2c1}}
+\index{hi2c1@{hi2c1}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{hi2c1}{hi2c1}}
+{\footnotesize\ttfamily I2\+C\+\_\+\+Handle\+Type\+Def hi2c1}
+
+\mbox{\Hypertarget{main_8c_ad6ba5a60e725f71a76497c5de37e3330}\label{main_8c_ad6ba5a60e725f71a76497c5de37e3330}} 
+\index{main.\+c@{main.\+c}!hopamp2@{hopamp2}}
+\index{hopamp2@{hopamp2}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{hopamp2}{hopamp2}}
+{\footnotesize\ttfamily O\+P\+A\+M\+P\+\_\+\+Handle\+Type\+Def hopamp2}
+
+\mbox{\Hypertarget{main_8c_a25fc663547539bc49fecc0011bd76ab5}\label{main_8c_a25fc663547539bc49fecc0011bd76ab5}} 
+\index{main.\+c@{main.\+c}!htim1@{htim1}}
+\index{htim1@{htim1}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{htim1}{htim1}}
+{\footnotesize\ttfamily T\+I\+M\+\_\+\+Handle\+Type\+Def htim1}
+
+\mbox{\Hypertarget{main_8c_aa9479c261d65eecedd3d9582f7f0f89c}\label{main_8c_aa9479c261d65eecedd3d9582f7f0f89c}} 
+\index{main.\+c@{main.\+c}!huart2@{huart2}}
+\index{huart2@{huart2}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{huart2}{huart2}}
+{\footnotesize\ttfamily U\+A\+R\+T\+\_\+\+Handle\+Type\+Def huart2}
+
+\mbox{\Hypertarget{main_8c_ab1bcd28186de164efc41cc366368628e}\label{main_8c_ab1bcd28186de164efc41cc366368628e}} 
+\index{main.\+c@{main.\+c}!ina219\+\_\+current\+Divider\+\_\+mA@{ina219\+\_\+current\+Divider\+\_\+mA}}
+\index{ina219\+\_\+current\+Divider\+\_\+mA@{ina219\+\_\+current\+Divider\+\_\+mA}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{ina219\+\_\+current\+Divider\+\_\+mA}{ina219\_currentDivider\_mA}}
+{\footnotesize\ttfamily uint32\+\_\+t ina219\+\_\+current\+Divider\+\_\+mA}
+
+\mbox{\Hypertarget{main_8c_a36230bacf89e85aea98122ffc94bc4fa}\label{main_8c_a36230bacf89e85aea98122ffc94bc4fa}} 
+\index{main.\+c@{main.\+c}!ina219\+\_\+power\+Multiplier\+\_\+mW@{ina219\+\_\+power\+Multiplier\+\_\+mW}}
+\index{ina219\+\_\+power\+Multiplier\+\_\+mW@{ina219\+\_\+power\+Multiplier\+\_\+mW}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{ina219\+\_\+power\+Multiplier\+\_\+mW}{ina219\_powerMultiplier\_mW}}
+{\footnotesize\ttfamily uint32\+\_\+t ina219\+\_\+power\+Multiplier\+\_\+mW}
+
+\mbox{\Hypertarget{main_8c_abe742aa972d23b14da1198c38178b547}\label{main_8c_abe742aa972d23b14da1198c38178b547}} 
+\index{main.\+c@{main.\+c}!uart1@{uart1}}
+\index{uart1@{uart1}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{uart1}{uart1}}
+{\footnotesize\ttfamily uint8\+\_\+t uart1\mbox{[}\hyperlink{stm32f3xx__it_8c_afba53f55baa92fb0f276b8cb130daefd}{I\+N\+\_\+\+S\+I\+ZE}\mbox{]}}
+
+\mbox{\Hypertarget{main_8c_a38534862cdd9958b6ca94c29cf6055a3}\label{main_8c_a38534862cdd9958b6ca94c29cf6055a3}} 
+\index{main.\+c@{main.\+c}!uart2@{uart2}}
+\index{uart2@{uart2}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{uart2}{uart2}}
+{\footnotesize\ttfamily uint8\+\_\+t uart2\mbox{[}\hyperlink{stm32f3xx__it_8c_afba53f55baa92fb0f276b8cb130daefd}{I\+N\+\_\+\+S\+I\+ZE}\mbox{]}}
+
+\mbox{\Hypertarget{main_8c_abafb86891e646f45ae2046b150883a04}\label{main_8c_abafb86891e646f45ae2046b150883a04}} 
+\index{main.\+c@{main.\+c}!uart\+\_\+ptr@{uart\+\_\+ptr}}
+\index{uart\+\_\+ptr@{uart\+\_\+ptr}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{uart\+\_\+ptr}{uart\_ptr}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ uart\+\_\+ptr}
+

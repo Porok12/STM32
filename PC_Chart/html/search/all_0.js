@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['_5fautoscrollbox',['_autoScrollBox',['../classMainWindow.html#aacb799cbf321719bbb1d682302798252',1,'MainWindow']]],
+  ['_5fbaudratebox',['_baudRateBox',['../classMainWindow.html#aff8ced34c2938264052e888fa31c9704',1,'MainWindow']]],
+  ['_5fchart',['_chart',['../classMainWindow.html#abceb3cc9b41fa17bf367f7cb475a0a03',1,'MainWindow']]],
+  ['_5fchartview',['_chartView',['../classMainWindow.html#a5c1071e1a9b436f607e14dd85cc51c6f',1,'MainWindow']]],
+  ['_5fconnectbtn',['_connectBtn',['../classMainWindow.html#a8a24c0fa7a9ce08d7c62043cb90c1a84',1,'MainWindow']]],
+  ['_5fflowcontrolbox',['_flowControlBox',['../classMainWindow.html#ac4ca89e6458dbce1f4dca70f17123892',1,'MainWindow']]],
+  ['_5flabel',['_label',['../classMainWindow.html#a1b4b4e9cd06c11051d9d88c17334b57e',1,'MainWindow']]],
+  ['_5flineedit',['_lineEdit',['../classMainWindow.html#ad8d180d000764830c6600213928fa38d',1,'MainWindow']]],
+  ['_5flist',['_list',['../classSerialPort.html#aa5417aaf7597e7b7349f9871a8dd5b2f',1,'SerialPort']]],
+  ['_5fmeasurementbox',['_measurementBox',['../classMainWindow.html#a9ebbfaef63c626558fd9ecca791493a6',1,'MainWindow']]],
+  ['_5fparitybox',['_parityBox',['../classMainWindow.html#ae6041d00d855eaa9f8a03297c556465a',1,'MainWindow']]],
+  ['_5fplain',['_plain',['../classMainWindow.html#aad53a19d55400715e21a8c4a94cd6754',1,'MainWindow']]],
+  ['_5fportbox',['_portBox',['../classMainWindow.html#a4412056949abeb7a14a44491be5fc9ea',1,'MainWindow']]],
+  ['_5frefreshbtn',['_refreshBtn',['../classMainWindow.html#a8de7f487a7dfb1d7e7d15e3a1366fa15',1,'MainWindow']]],
+  ['_5fserial',['_serial',['../classMainWindow.html#a19f91aa8908f303c76ce28b091f97e73',1,'MainWindow']]],
+  ['_5fseries',['_series',['../classChart.html#a2b6b5680d382cb18164593293825fc08',1,'Chart']]],
+  ['_5fspinbox',['_spinBox',['../classMainWindow.html#ab5c9c33a5b95515303a7aabdf05e70b1',1,'MainWindow']]],
+  ['_5fstopbitsbox',['_stopBitsBox',['../classMainWindow.html#ad886195377aedece39671edd11ed5d39',1,'MainWindow']]],
+  ['_5ftemp',['_temp',['../classSerialPort.html#a2f94f65fcf6950d7e033d48077f0282d',1,'SerialPort']]],
+  ['_5ftimer',['_timer',['../classChart.html#a586658c9f0ef3a3bd5d614a178436865',1,'Chart']]],
+  ['_5fxcurrent',['_xCurrent',['../classChart.html#a5434effc2361d5f6890982e83e8bc871',1,'Chart']]],
+  ['_5fxmeasurementrate',['_xMeasurementRate',['../classChart.html#a7034a9d00d36ee96eb8af2d7c2af832d',1,'Chart']]],
+  ['_5fxrange',['_xRange',['../classChart.html#a714191d2fc69d06d66872bba187d144b',1,'Chart']]],
+  ['_5fymax',['_yMax',['../classChart.html#aeac5778c508d702f8deb07cbb7b2c867',1,'Chart']]]
+];

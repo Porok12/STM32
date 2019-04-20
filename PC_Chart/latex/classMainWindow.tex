@@ -1,0 +1,376 @@
+\hypertarget{classMainWindow}{}\subsection{Main\+Window Class Reference}
+\label{classMainWindow}\index{Main\+Window@{Main\+Window}}
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classMainWindow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Window\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classMainWindow__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}{Main\+Window} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Sets up basic parameters. \end{DoxyCompactList}\item 
+\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destroys all pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_a22d5b63d63ca5fc1fb9a7ef40efc38c8}{open\+Serial\+Port} ()
+\begin{DoxyCompactList}\small\item\em Tries to connect to serial port. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_ac5eae1a5faf30bb616185aa3be724484}{close\+Serial\+Port} ()
+\begin{DoxyCompactList}\small\item\em Closes connection to serial port. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a76237574ac5c68506bcb9b9de468fda2}{write\+Data} (const Q\+Byte\+Array \&data)
+\begin{DoxyCompactList}\small\item\em Sends data through serial port. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a5afc1f8c3bbce5e91e4cebf2dd4e6069}{search\+For\+Ports} ()
+\begin{DoxyCompactList}\small\item\em Search for ports. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_ad7ece63fdbb09608a22fc0631143b6ec}{line\+Edit\+Enter\+Text} ()
+\begin{DoxyCompactList}\small\item\em Sends data. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_ad3fa656a0c81fa2ec687b02bd0f9658b}{measurement\+Changed} (int index)
+\begin{DoxyCompactList}\small\item\em Changes measurement goal. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a89b2e9afba74a68fd3b4a28d4475cec7}{plain\+Text\+Changed} ()
+\begin{DoxyCompactList}\small\item\em Scrolls to bottom when required. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a19690cb09dbe0abd4252c6b8236d6810}{handle\+Error} (Q\+Serial\+Port\+::\+Serial\+Port\+Error error)
+\begin{DoxyCompactList}\small\item\em Display all errors. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a922a5c49b11ae3ec01663b409cfc35c1}{button\+Clicked} ()
+\begin{DoxyCompactList}\small\item\em Handles connection\textquotesingle{}s button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Grid\+Layout $\ast$ \hyperlink{classMainWindow_a19f1d3f1ccdc04be0f5f63f0c99264f4}{setup\+Main\+Layout} ()
+\begin{DoxyCompactList}\small\item\em Sets up whole layout. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a74ab7a387068bddadc3e665ba64b73b8}{setup\+Serial} ()
+\begin{DoxyCompactList}\small\item\em Sets up all required values for serial connection. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a5235529d74723de1e3686da400dd1d37}{init\+Actions\+Connections} ()
+\begin{DoxyCompactList}\small\item\em Initializes all connections. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classChart}{Chart} $\ast$ \hyperlink{classMainWindow_abceb3cc9b41fa17bf367f7cb475a0a03}{\+\_\+chart}
+\item 
+\hyperlink{classSerialPort}{Serial\+Port} $\ast$ \hyperlink{classMainWindow_a19f91aa8908f303c76ce28b091f97e73}{\+\_\+serial}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{classMainWindow_a8a24c0fa7a9ce08d7c62043cb90c1a84}{\+\_\+connect\+Btn}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{classMainWindow_a8de7f487a7dfb1d7e7d15e3a1366fa15}{\+\_\+refresh\+Btn}
+\item 
+Q\+Plain\+Text\+Edit $\ast$ \hyperlink{classMainWindow_aad53a19d55400715e21a8c4a94cd6754}{\+\_\+plain}
+\item 
+Q\+Chart\+View $\ast$ \hyperlink{classMainWindow_a5c1071e1a9b436f607e14dd85cc51c6f}{\+\_\+chart\+View}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{classMainWindow_a4412056949abeb7a14a44491be5fc9ea}{\+\_\+port\+Box}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{classMainWindow_aff8ced34c2938264052e888fa31c9704}{\+\_\+baud\+Rate\+Box}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{classMainWindow_ae6041d00d855eaa9f8a03297c556465a}{\+\_\+parity\+Box}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{classMainWindow_ad886195377aedece39671edd11ed5d39}{\+\_\+stop\+Bits\+Box}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{classMainWindow_ac4ca89e6458dbce1f4dca70f17123892}{\+\_\+flow\+Control\+Box}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{classMainWindow_a9ebbfaef63c626558fd9ecca791493a6}{\+\_\+measurement\+Box}
+\item 
+Q\+Spin\+Box $\ast$ \hyperlink{classMainWindow_ab5c9c33a5b95515303a7aabdf05e70b1}{\+\_\+spin\+Box}
+\item 
+Q\+Label $\ast$ \hyperlink{classMainWindow_a1b4b4e9cd06c11051d9d88c17334b57e}{\+\_\+label}
+\item 
+Q\+Line\+Edit $\ast$ \hyperlink{classMainWindow_ad8d180d000764830c6600213928fa38d}{\+\_\+line\+Edit}
+\item 
+Q\+Check\+Box $\ast$ \hyperlink{classMainWindow_aacb799cbf321719bbb1d682302798252}{\+\_\+auto\+Scroll\+Box}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Przemyslaw Papla 
+\end{DoxyAuthor}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}\label{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}} 
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{Main\+Window()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Sets up basic parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{Main\+Window@{Main\+Window}!````~Main\+Window@{$\sim$\+Main\+Window}}
+\index{````~Main\+Window@{$\sim$\+Main\+Window}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{$\sim$\+Main\+Window()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys all pointers. 
+
+
+
+\subsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainWindow_a922a5c49b11ae3ec01663b409cfc35c1}\label{classMainWindow_a922a5c49b11ae3ec01663b409cfc35c1}} 
+\index{Main\+Window@{Main\+Window}!button\+Clicked@{button\+Clicked}}
+\index{button\+Clicked@{button\+Clicked}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{button\+Clicked}{buttonClicked}}
+{\footnotesize\ttfamily void Main\+Window\+::button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Handles connection\textquotesingle{}s button. 
+
+\mbox{\Hypertarget{classMainWindow_ac5eae1a5faf30bb616185aa3be724484}\label{classMainWindow_ac5eae1a5faf30bb616185aa3be724484}} 
+\index{Main\+Window@{Main\+Window}!close\+Serial\+Port@{close\+Serial\+Port}}
+\index{close\+Serial\+Port@{close\+Serial\+Port}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{close\+Serial\+Port}{closeSerialPort}}
+{\footnotesize\ttfamily void Main\+Window\+::close\+Serial\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Closes connection to serial port. 
+
+\mbox{\Hypertarget{classMainWindow_a19690cb09dbe0abd4252c6b8236d6810}\label{classMainWindow_a19690cb09dbe0abd4252c6b8236d6810}} 
+\index{Main\+Window@{Main\+Window}!handle\+Error@{handle\+Error}}
+\index{handle\+Error@{handle\+Error}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{handle\+Error}{handleError}}
+{\footnotesize\ttfamily void Main\+Window\+::handle\+Error (\begin{DoxyParamCaption}\item[{Q\+Serial\+Port\+::\+Serial\+Port\+Error}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Display all errors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a5235529d74723de1e3686da400dd1d37}\label{classMainWindow_a5235529d74723de1e3686da400dd1d37}} 
+\index{Main\+Window@{Main\+Window}!init\+Actions\+Connections@{init\+Actions\+Connections}}
+\index{init\+Actions\+Connections@{init\+Actions\+Connections}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{init\+Actions\+Connections()}{initActionsConnections()}}
+{\footnotesize\ttfamily void Main\+Window\+::init\+Actions\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initializes all connections. 
+
+\mbox{\Hypertarget{classMainWindow_ad7ece63fdbb09608a22fc0631143b6ec}\label{classMainWindow_ad7ece63fdbb09608a22fc0631143b6ec}} 
+\index{Main\+Window@{Main\+Window}!line\+Edit\+Enter\+Text@{line\+Edit\+Enter\+Text}}
+\index{line\+Edit\+Enter\+Text@{line\+Edit\+Enter\+Text}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{line\+Edit\+Enter\+Text}{lineEditEnterText}}
+{\footnotesize\ttfamily void Main\+Window\+::line\+Edit\+Enter\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Sends data. 
+
+\mbox{\Hypertarget{classMainWindow_ad3fa656a0c81fa2ec687b02bd0f9658b}\label{classMainWindow_ad3fa656a0c81fa2ec687b02bd0f9658b}} 
+\index{Main\+Window@{Main\+Window}!measurement\+Changed@{measurement\+Changed}}
+\index{measurement\+Changed@{measurement\+Changed}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{measurement\+Changed}{measurementChanged}}
+{\footnotesize\ttfamily void Main\+Window\+::measurement\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Changes measurement goal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a22d5b63d63ca5fc1fb9a7ef40efc38c8}\label{classMainWindow_a22d5b63d63ca5fc1fb9a7ef40efc38c8}} 
+\index{Main\+Window@{Main\+Window}!open\+Serial\+Port@{open\+Serial\+Port}}
+\index{open\+Serial\+Port@{open\+Serial\+Port}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{open\+Serial\+Port}{openSerialPort}}
+{\footnotesize\ttfamily void Main\+Window\+::open\+Serial\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Tries to connect to serial port. 
+
+\mbox{\Hypertarget{classMainWindow_a89b2e9afba74a68fd3b4a28d4475cec7}\label{classMainWindow_a89b2e9afba74a68fd3b4a28d4475cec7}} 
+\index{Main\+Window@{Main\+Window}!plain\+Text\+Changed@{plain\+Text\+Changed}}
+\index{plain\+Text\+Changed@{plain\+Text\+Changed}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{plain\+Text\+Changed}{plainTextChanged}}
+{\footnotesize\ttfamily void Main\+Window\+::plain\+Text\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Scrolls to bottom when required. 
+
+\mbox{\Hypertarget{classMainWindow_a5afc1f8c3bbce5e91e4cebf2dd4e6069}\label{classMainWindow_a5afc1f8c3bbce5e91e4cebf2dd4e6069}} 
+\index{Main\+Window@{Main\+Window}!search\+For\+Ports@{search\+For\+Ports}}
+\index{search\+For\+Ports@{search\+For\+Ports}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{search\+For\+Ports}{searchForPorts}}
+{\footnotesize\ttfamily void Main\+Window\+::search\+For\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Search for ports. 
+
+\mbox{\Hypertarget{classMainWindow_a19f1d3f1ccdc04be0f5f63f0c99264f4}\label{classMainWindow_a19f1d3f1ccdc04be0f5f63f0c99264f4}} 
+\index{Main\+Window@{Main\+Window}!setup\+Main\+Layout@{setup\+Main\+Layout}}
+\index{setup\+Main\+Layout@{setup\+Main\+Layout}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{setup\+Main\+Layout()}{setupMainLayout()}}
+{\footnotesize\ttfamily Q\+Grid\+Layout $\ast$ Main\+Window\+::setup\+Main\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets up whole layout. 
+
+\begin{DoxyReturn}{Returns}
+main Q\+Grid\+Layout 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMainWindow_a74ab7a387068bddadc3e665ba64b73b8}\label{classMainWindow_a74ab7a387068bddadc3e665ba64b73b8}} 
+\index{Main\+Window@{Main\+Window}!setup\+Serial@{setup\+Serial}}
+\index{setup\+Serial@{setup\+Serial}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{setup\+Serial()}{setupSerial()}}
+{\footnotesize\ttfamily void Main\+Window\+::setup\+Serial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets up all required values for serial connection. 
+
+\mbox{\Hypertarget{classMainWindow_a76237574ac5c68506bcb9b9de468fda2}\label{classMainWindow_a76237574ac5c68506bcb9b9de468fda2}} 
+\index{Main\+Window@{Main\+Window}!write\+Data@{write\+Data}}
+\index{write\+Data@{write\+Data}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{write\+Data}{writeData}}
+{\footnotesize\ttfamily void Main\+Window\+::write\+Data (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Sends data through serial port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & data to be send \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMainWindow_aacb799cbf321719bbb1d682302798252}\label{classMainWindow_aacb799cbf321719bbb1d682302798252}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+auto\+Scroll\+Box@{\+\_\+auto\+Scroll\+Box}}
+\index{\+\_\+auto\+Scroll\+Box@{\+\_\+auto\+Scroll\+Box}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+auto\+Scroll\+Box}{\_autoScrollBox}}
+{\footnotesize\ttfamily Q\+Check\+Box$\ast$ Main\+Window\+::\+\_\+auto\+Scroll\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_aff8ced34c2938264052e888fa31c9704}\label{classMainWindow_aff8ced34c2938264052e888fa31c9704}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+baud\+Rate\+Box@{\+\_\+baud\+Rate\+Box}}
+\index{\+\_\+baud\+Rate\+Box@{\+\_\+baud\+Rate\+Box}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+baud\+Rate\+Box}{\_baudRateBox}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ Main\+Window\+::\+\_\+baud\+Rate\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_abceb3cc9b41fa17bf367f7cb475a0a03}\label{classMainWindow_abceb3cc9b41fa17bf367f7cb475a0a03}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+chart@{\+\_\+chart}}
+\index{\+\_\+chart@{\+\_\+chart}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+chart}{\_chart}}
+{\footnotesize\ttfamily \hyperlink{classChart}{Chart}$\ast$ Main\+Window\+::\+\_\+chart\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_a5c1071e1a9b436f607e14dd85cc51c6f}\label{classMainWindow_a5c1071e1a9b436f607e14dd85cc51c6f}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+chart\+View@{\+\_\+chart\+View}}
+\index{\+\_\+chart\+View@{\+\_\+chart\+View}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+chart\+View}{\_chartView}}
+{\footnotesize\ttfamily Q\+Chart\+View$\ast$ Main\+Window\+::\+\_\+chart\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_a8a24c0fa7a9ce08d7c62043cb90c1a84}\label{classMainWindow_a8a24c0fa7a9ce08d7c62043cb90c1a84}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+connect\+Btn@{\+\_\+connect\+Btn}}
+\index{\+\_\+connect\+Btn@{\+\_\+connect\+Btn}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+connect\+Btn}{\_connectBtn}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Main\+Window\+::\+\_\+connect\+Btn\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_ac4ca89e6458dbce1f4dca70f17123892}\label{classMainWindow_ac4ca89e6458dbce1f4dca70f17123892}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+flow\+Control\+Box@{\+\_\+flow\+Control\+Box}}
+\index{\+\_\+flow\+Control\+Box@{\+\_\+flow\+Control\+Box}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+flow\+Control\+Box}{\_flowControlBox}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ Main\+Window\+::\+\_\+flow\+Control\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_a1b4b4e9cd06c11051d9d88c17334b57e}\label{classMainWindow_a1b4b4e9cd06c11051d9d88c17334b57e}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+label@{\+\_\+label}}
+\index{\+\_\+label@{\+\_\+label}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+label}{\_label}}
+{\footnotesize\ttfamily Q\+Label$\ast$ Main\+Window\+::\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_ad8d180d000764830c6600213928fa38d}\label{classMainWindow_ad8d180d000764830c6600213928fa38d}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+line\+Edit@{\+\_\+line\+Edit}}
+\index{\+\_\+line\+Edit@{\+\_\+line\+Edit}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+line\+Edit}{\_lineEdit}}
+{\footnotesize\ttfamily Q\+Line\+Edit$\ast$ Main\+Window\+::\+\_\+line\+Edit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_a9ebbfaef63c626558fd9ecca791493a6}\label{classMainWindow_a9ebbfaef63c626558fd9ecca791493a6}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+measurement\+Box@{\+\_\+measurement\+Box}}
+\index{\+\_\+measurement\+Box@{\+\_\+measurement\+Box}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+measurement\+Box}{\_measurementBox}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ Main\+Window\+::\+\_\+measurement\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_ae6041d00d855eaa9f8a03297c556465a}\label{classMainWindow_ae6041d00d855eaa9f8a03297c556465a}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+parity\+Box@{\+\_\+parity\+Box}}
+\index{\+\_\+parity\+Box@{\+\_\+parity\+Box}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+parity\+Box}{\_parityBox}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ Main\+Window\+::\+\_\+parity\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_aad53a19d55400715e21a8c4a94cd6754}\label{classMainWindow_aad53a19d55400715e21a8c4a94cd6754}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+plain@{\+\_\+plain}}
+\index{\+\_\+plain@{\+\_\+plain}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+plain}{\_plain}}
+{\footnotesize\ttfamily Q\+Plain\+Text\+Edit$\ast$ Main\+Window\+::\+\_\+plain\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_a4412056949abeb7a14a44491be5fc9ea}\label{classMainWindow_a4412056949abeb7a14a44491be5fc9ea}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+port\+Box@{\+\_\+port\+Box}}
+\index{\+\_\+port\+Box@{\+\_\+port\+Box}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+port\+Box}{\_portBox}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ Main\+Window\+::\+\_\+port\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_a8de7f487a7dfb1d7e7d15e3a1366fa15}\label{classMainWindow_a8de7f487a7dfb1d7e7d15e3a1366fa15}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+refresh\+Btn@{\+\_\+refresh\+Btn}}
+\index{\+\_\+refresh\+Btn@{\+\_\+refresh\+Btn}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+refresh\+Btn}{\_refreshBtn}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Main\+Window\+::\+\_\+refresh\+Btn\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_a19f91aa8908f303c76ce28b091f97e73}\label{classMainWindow_a19f91aa8908f303c76ce28b091f97e73}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+serial@{\+\_\+serial}}
+\index{\+\_\+serial@{\+\_\+serial}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+serial}{\_serial}}
+{\footnotesize\ttfamily \hyperlink{classSerialPort}{Serial\+Port}$\ast$ Main\+Window\+::\+\_\+serial\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_ab5c9c33a5b95515303a7aabdf05e70b1}\label{classMainWindow_ab5c9c33a5b95515303a7aabdf05e70b1}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+spin\+Box@{\+\_\+spin\+Box}}
+\index{\+\_\+spin\+Box@{\+\_\+spin\+Box}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+spin\+Box}{\_spinBox}}
+{\footnotesize\ttfamily Q\+Spin\+Box$\ast$ Main\+Window\+::\+\_\+spin\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainWindow_ad886195377aedece39671edd11ed5d39}\label{classMainWindow_ad886195377aedece39671edd11ed5d39}} 
+\index{Main\+Window@{Main\+Window}!\+\_\+stop\+Bits\+Box@{\+\_\+stop\+Bits\+Box}}
+\index{\+\_\+stop\+Bits\+Box@{\+\_\+stop\+Bits\+Box}!Main\+Window@{Main\+Window}}
+\paragraph{\texorpdfstring{\+\_\+stop\+Bits\+Box}{\_stopBitsBox}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ Main\+Window\+::\+\_\+stop\+Bits\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\+h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}\end{DoxyCompactItemize}
