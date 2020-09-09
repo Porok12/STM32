@@ -1,0 +1,4 @@
+/home/przemek/Projects/CLion/clion-2018.1.6/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/przemek/CLionProjects/PTP
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/przemek/CLionProjects/PTP/cmake-build-debug
